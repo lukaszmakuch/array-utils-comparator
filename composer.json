@@ -12,12 +12,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "lukaszmakuch\\ArrayUtils\\Comparator\\": "src/"
+            "lukaszmakuch\\ArrayUtils\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "lukaszmakuch\\ArrayUtils\\Comparator\\": "tests/"
+            "lukaszmakuch\\ArrayUtils\\": "tests/"
         }
     },
     "minimum-stability": "stable",
