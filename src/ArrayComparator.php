@@ -11,8 +11,23 @@ namespace lukaszmakuch\ArrayUtils;
 
 class ArrayComparator
 {
-    /*
+    /**
      * Checks whether two arrays hold equal elements.
+     * 
+     * Order of elements does not matter.
+     * 
+     * @param int $arr1 first of two arrays to compare
+     * @param int $arr2 second of two arrays to compare
+     * @param callable $valueCompareFunction optional function
+     * used to compare array values for equality. 
+     * Must return true  if two compared values are equal or false if they are not. 
+     * Takes an element of the first array as its first argument and 
+     * an element of the second array as its second (and the last) argument.
+     * <pre>
+     * boolean callback(mixed $arr1Element, $arr2Element)
+     * </pre>
+     * 
+     * @return boolean true if arrays hold equal values, false otherwise
      */
     public static function arraysHoldEqualElements(
         array $arr1,
